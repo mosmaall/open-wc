@@ -26,7 +26,8 @@
     "test": "npm run test:node",
     "test:node": "mocha test/**/*.test.js test/*.test.js",
     "test:update-snapshots": "mocha test/**/*.test.js test/*.test.js --update-snapshots",
-    "test:watch": "npm run test:node -- --watch"
+    "test:watch": "npm run test:node -- --watch",
+    "prepublishOnly": "../../scripts/insert-header.js"
   },
   "files": [
     "*.js",
